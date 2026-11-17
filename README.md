@@ -33,4 +33,4 @@ project to practice HTML, CSS and JavaScript.
 
 ## 👩‍💻 Author
 
-Your Name
+Shifna Sherine T

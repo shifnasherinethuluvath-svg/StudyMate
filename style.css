@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f3ff;
+    color: #333;
+}
+
+header {
+    background: #6c63ff;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.welcome {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    margin-top: 10px;
+    color: #777;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.stat-card h3 {
+    color: #6c63ff;
+    font-size: 30px;
+}
+
+.stat-card p {
+    margin-top: 8px;
+}
+
+.task-form, .task-section, .progress-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+button {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5148dc;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-info {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.task-info p {
+    color: #777;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete-btn {
+    background: #ff5c5c;
+}
+
+.delete-btn:hover {
+    background: #e04444;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background: #e5e5e5;
+    border-radius: 20px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+#progressFill {
+    width: 0%;
+    height: 100%;
+    background: #6c63ff;
+    transition: width 0.3s;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .task {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
